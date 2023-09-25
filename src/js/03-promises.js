@@ -5,6 +5,10 @@ const form = document.querySelector('.form');
 form.addEventListener('input', checkInput);
 form.addEventListener('submit', checkSubmit);
 
+
+let delay = null
+let step = null
+let amount = null
 function checkInput(e) {
   delay = Number(e.currentTarget.delay.value);
   step = Number(e.currentTarget.step.value);
